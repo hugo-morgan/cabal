@@ -1,6 +1,6 @@
 import time
 import pyautogui
-import caos_dentro
+import subprocess
 
 dg = input("Qual dg deseja fazer?")
 qtde = int(input("Quantas vezes deseja fazer?"))
@@ -20,7 +20,7 @@ for i in range(qtde):
             pyautogui.click(680, 210)
             time.sleep(3)
             print("DG selecionada: {}".format(dg))
-            exec("caos_dentro")
+            subprocess.call("caos_dentro.py", shell=True)
         case 'caos 2':
             time.sleep(2)
             pyautogui.moveTo(730, 266)
@@ -33,7 +33,7 @@ for i in range(qtde):
             pyautogui.click(680, 230)
             time.sleep(3)
             print("DG selecionada: {}".format(dg))
-            exec("caos_dentro")
+            subprocess.call("caos_dentro.py", shell=True)
         case 'caos 3':
             time.sleep(2)
             pyautogui.moveTo(730, 266)
@@ -46,7 +46,7 @@ for i in range(qtde):
             pyautogui.click(680, 250)
             time.sleep(3)
             print("DG selecionada: {}".format(dg))
-            exec("caos_dentro")
+            subprocess.call("caos_dentro.py", shell=True)
         case 'caos 4':
             time.sleep(2)
             pyautogui.moveTo(730, 266)
@@ -59,7 +59,7 @@ for i in range(qtde):
             pyautogui.click(680, 270)
             time.sleep(3)
             print("DG selecionada: {}".format(dg))
-            exec("caos_dentro")
+            subprocess.call("caos_dentro.py", shell=True)
         case 'caos 5':
             time.sleep(2)
             pyautogui.moveTo(730, 266)
@@ -72,7 +72,7 @@ for i in range(qtde):
             pyautogui.click(680, 290)
             time.sleep(3)
             print("DG selecionada: {}".format(dg))
-            exec("caos_dentro")
+            subprocess.call("caos_dentro.py", shell=True)
         case 'caos 6':
             time.sleep(2)
             pyautogui.moveTo(730, 266)
@@ -85,7 +85,7 @@ for i in range(qtde):
             pyautogui.click(680, 310)
             time.sleep(3)
             print("DG selecionada: {}".format(dg))
-            exec("caos_dentro")
+            subprocess.call("caos_dentro.py", shell=True)
         case other:
             print('DG não encontrada')
 
